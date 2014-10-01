@@ -1,0 +1,17 @@
+/* 
+    Document   : osnic_chartsMain
+    Created on : 12 Sep, 2014, 3:56:03 PM
+    Author     : yashan
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+#osMychartstbl {
+    border-collapse: collapse;
+    border: 1px solid;
+}
+
+#osMychartstbl tr, #osMychartstbl th, #osMychartstbl td{
+    border: 1px solid;
+}
+
