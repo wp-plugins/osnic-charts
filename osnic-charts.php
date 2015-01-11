@@ -3,7 +3,7 @@
  * Plugin Name: Osnic Charts
  * Plugin URI: http://www.osnictech.com
  * Description: Create interactive charts using HTML5 canvas, Supports 6 types of charts, Save at backend and add shortcode as [osnic_charts id="id"] to add chart in your post.
- * Version: 1.0
+ * Version: 1.1
  * Author: Yashan Mittal
  * Author URI: http://www.osnictech.com
  * License: GPLv2 or later

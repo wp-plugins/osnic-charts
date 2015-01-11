@@ -32,12 +32,12 @@ function column_chart(){
             var yaxis = $("input[name='yaxis']").val();
             var xaxis = $("input[name='xaxis']").val();
             var dataPoints = setDataPoints(xaxis,yaxis);
-            if(dataPoints.error != ""){
+            if(typeof dataPoints.error != "undefined"){
                 setErrMsg(dataPoints.error,'red');
                 return false;
             }
             var chartType = $("input[name='ChartType']").val();
-            validateDataP(yaxis);
+//            validateDataP(yaxis);
             var chart = new CanvasJS.Chart("chartContainer",
             {
               title:setTitle($("input[name='title']").val()),
@@ -89,8 +89,7 @@ function setDataPoints(XPoints,YPoints){
 function submitChartFrm(){
     $("#create_chart_frm").submit(function(){
         var data = $(this).serializeArray();
-        console.log(data);
-        return false;
+        return data;
     })
 }
 

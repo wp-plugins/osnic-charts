@@ -1,9 +1,9 @@
 === Plugin Name ===
 Contributors: yashanm, ggmittal
-Tags: chart, charts, coulmn chart, line chart, spline chart, area chart, pie chart, doughnut chart, canvas, canvasjs, json, csv, diagram
+Tags: chart, charts, coulmn chart, line chart, spline chart, area chart, pie chart, doughnut chart, canvas, canvasjs, json, csv, diagram, graph
 Requires at least: 3.1
 Tested up to: 4.0
-Stable tag: 1.0
+Stable tag: 1.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -62,3 +62,6 @@ y-axis only support numeric values. apple,banana,orange values are invalid.
 
 = 1.0 =
 * Initial Version of plugin
+
+= 1.1
+* Fixed several bugs and improved working
