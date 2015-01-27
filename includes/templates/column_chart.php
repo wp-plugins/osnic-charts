@@ -26,18 +26,22 @@
 <div id="error_msg">
   </div>
 <form id="create_chart_frm" method="post">
-<table>
+<table class="form-table form-table-charts">
     <tr>
-        <td>Chart Title:</td>
+        <th>Chart Title&nbsp;&nbsp;:</th>
         <td><input placeholder="chart title" type="text" name="title" value="<?php echo $DataTitle; ?>"/></td>
     </tr>
     <tr>
-        <td>Data X-axis</td>
-        <td><input placeholder="Comma Seperated values" type="text" name="xaxis" value="<?php echo $dataX; ?>"/></td>
+        <th>Data X-axis&nbsp;&nbsp;:</th>
+        <td><input placeholder="Comma Seperated values" type="text" name="xaxis" value="<?php echo $dataX; ?>"/>
+        <br/><label><strong>ex :</strong> 23,34,45,...</label>
+        </td>
     </tr>
     <tr>
-        <td>Data Y-axis</td>
-        <td><input placeholder="Comma Seperated values" type="text" name="yaxis" value="<?php echo $dataY; ?>"/></td>
+        <th>Data Y-axis&nbsp;&nbsp;:</th>
+        <td><input placeholder="Comma Seperated values" type="text" name="yaxis" value="<?php echo $dataY; ?>"/>
+         <br/><label><strong>ex :</strong> apple, banana,...</label>
+        </td>
     </tr>
     <tr>
         <td>&nbsp;</td>

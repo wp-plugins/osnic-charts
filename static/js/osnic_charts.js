@@ -20,11 +20,11 @@
                $("#os_load_mainContainer").html(""); 
             }
         })
-        
     })
     
     
 })(jQuery);
+
 
 var $ = jQuery;
 function column_chart(){
@@ -60,6 +60,8 @@ function setTitle(title){
     return {text:title};
 }
 
+
+
 function setDataPoints(XPoints,YPoints){
     var i = 0;
     var Data = [];
@@ -92,5 +94,7 @@ function submitChartFrm(){
         return data;
     })
 }
+
+    
 
 

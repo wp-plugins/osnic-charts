@@ -3,7 +3,7 @@
  * Plugin Name: Osnic Charts
  * Plugin URI: http://www.osnictech.com
  * Description: Create interactive charts using HTML5 canvas, Supports 6 types of charts, Save at backend and add shortcode as [osnic_charts id="id"] to add chart in your post.
- * Version: 1.1
+ * Version: 1.2
  * Author: Yashan Mittal
  * Author URI: http://www.osnictech.com
  * License: GPLv2 or later
@@ -97,4 +97,23 @@ function frontend_chart_display(){
 }
 
 add_shortcode( 'osnic_charts', array('Charts','Charts_shortcode') );
+
+
+function osnic_charts_admin_notice() {
+if( $_GET['type'] == 'edit' && $_POST['title']!='' && ($_POST['xaxis']!='' && $_POST['yaxis']!='')) {
+?>
+<div class="updated">
+    <p><?php _e( 'Chart has been successfully updated', 'osnic_charts' ); ?></p>
+</div>
+<?php
+}elseif($_POST['title']!='' && ($_POST['xaxis']!='' && $_POST['yaxis']!='')){ ?>
+    <div class="updated">
+    <p><?php _e( ' The chart has been successfully created', 'osnic_charts' ); ?></p>
+    </div>
+<?php
+}
+
+}
+add_action( 'admin_notices', 'osnic_charts_admin_notice' );
+
 ?>

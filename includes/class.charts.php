@@ -62,8 +62,20 @@ class Charts {
         return $this->db->get_row($sql);
     }
     
+    public function delete_chart($id)
+    {
+        $del_id=$id;
+        $sql = "DELETE from os_charts where id = ".$id;
+        $this->db->query($sql);
+        return true;
+        //chart_delte_admin_notice($del_id);
+    }
+    
     public function getCharts($limit = 0){
-        $sql = "select * from os_charts";
+        $pagenum = isset( $_GET['pagenum'] ) ? absint( $_GET['pagenum'] ) : 1;
+        $limit = 10;
+        $offset = ( $pagenum - 1 ) * $limit;
+        $sql = "SELECT * FROM os_charts LIMIT $offset, $limit";
         $charts = $this->db->get_results( $sql, OBJECT );
         return $charts;
     }
@@ -86,6 +98,5 @@ class Charts {
         return $html;
         
     }
-
 }
 ?>

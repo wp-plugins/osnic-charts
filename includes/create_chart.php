@@ -6,7 +6,6 @@ if(isset($_POST['save'])){
     $charts = new Charts();
     $check = $charts->save_chart($_POST);
 }
-
 if(isset($_GET['type']) && $_GET['type'] == 'edit'){
     $type = $_GET['type'];
     $charts = new Charts();
@@ -14,7 +13,7 @@ if(isset($_GET['type']) && $_GET['type'] == 'edit'){
     $chartData = $charts->getChartById($chartId);
     if($chartData){
     ?>
-        <h3>Edit Chart</h3>
+        <h3 class="create_chart_head">Edit Chart</h3>
     <?php
         include_once OSNIC_PLUGIN_DIR.'includes/templates/column_chart.php';
     }
@@ -22,10 +21,10 @@ if(isset($_GET['type']) && $_GET['type'] == 'edit'){
 else{
     $chartId = 0;
 ?>
-  <h3>Add Charts</h3>
-    <table>
+  <h3 class="create_chart_head">Add Charts</h3>
+    <table class="form-table form-table-charts create_chart_option">
         <tr>
-            <td>Select Chart:</td>
+            <th>Select Chart&nbsp;&nbsp;:</th>
             <td>
                 <select id="os_selectChart">
                     <option value="0">Select Chart</option>

@@ -3,7 +3,7 @@ Contributors: yashanm, ggmittal
 Tags: chart, charts, coulmn chart, line chart, spline chart, area chart, pie chart, doughnut chart, canvas, canvasjs, json, csv, diagram, graph
 Requires at least: 3.1
 Tested up to: 4.0
-Stable tag: 1.1
+Stable tag: 1.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -63,5 +63,10 @@ y-axis only support numeric values. apple,banana,orange values are invalid.
 = 1.0 =
 * Initial Version of plugin
 
-= 1.1
+= 1.1 =
 * Fixed several bugs and improved working
+
+= 1.2 =
+* Added admin notices for updation,deletion and creation of new charts
+* UI improvements
+* Added deletion of charts
